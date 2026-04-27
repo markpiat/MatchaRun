@@ -148,6 +148,10 @@ button {
   padding: 16px 20px;
 }
 
+button:hover {
+  filter: brightness(0.96);
+}
+
 .feature {
   display: flex;
   gap: 14px;
@@ -169,6 +173,32 @@ button {
 .plan-panel {
   background: #182018;
   color: #f8f4ea;
+}
+
+.plan-note {
+  color: #dfe8d7;
+  line-height: 1.6;
+}
+
+.pace-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin: 20px 0 24px;
+}
+
+.pace-grid span {
+  display: grid;
+  gap: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.08);
+  color: #dfe8d7;
+  padding: 16px;
+}
+
+.pace-grid strong {
+  color: #ffffff;
 }
 
 .plan-grid {
@@ -198,6 +228,7 @@ button {
   .hero,
   .grid,
   .plan-grid,
+  .pace-grid,
   .two-cols {
     grid-template-columns: 1fr;
   }
